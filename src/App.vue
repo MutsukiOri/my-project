@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <tab-menu></tab-menu>
     <router-view/>
   </div>
 </template>
@@ -14,7 +15,6 @@ export default {
   components: {
     TabMenu
   }
-
 }
 </script>
 
