@@ -34,7 +34,7 @@ div.content {
 }
 
 h3 {
-  color: white;
+  color: black;
 }
 
 p {

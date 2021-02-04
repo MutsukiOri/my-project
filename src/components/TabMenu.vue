@@ -11,15 +11,17 @@
 </template>
 
 <script>
+import HomeVue from './Home.vue'
 export default {
   name: 'TabMenu',
   data () {
     return {
       items: [
-        { title: 'top', path: '/' },
-        { title: 'profile', path: '/profile' },
-        { title: 'skills', path: '/skills' },
-        { title: 'outputs', path: '/outputs' }
+        { id:'Home', title: 'Home', path: '/' },
+        { id:'AboutUs', title: 'About us', path: '/about-us' },
+        { id:'Schedule', title: 'Schedule', path: '/schedule' },
+        { id:'Memory', title: 'Memory', path: '/memory' },
+        { id:'Contact', title: 'Contact', path: '/contact'}
       ]
     }
   }
@@ -29,27 +31,28 @@ export default {
 <style scoped>
 
 ol {
-  margin-left: auto;
+  /* margin-right: auto; */
+  margin-left: 5%;
   width: 480px;
   display:flex;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
+  /* justify-content: center; */
+  /* padding-left: auto; */
+  list-style: none
 }
 
 li {
-  width: 100px;
+  width: 150px;
   height: 50px;
   margin-left:10px;
   margin-right:10px;
-  font-size: 14px;
-  background-color: skyblue;
-  border-radius: 8px;
+  font-size: 18px;
+  /* background-color: blue; */
+  /* border-radius: 10px; */
   position: relative;
 }
 
 li:hover {
-  opacity: 0.4;
+  /* background-color: skyblue; */
 }
 
 /*  router-linkがaタグとして表示されてたのでスタイルをaタグに書いた*/
@@ -59,9 +62,14 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: black;
   text-decoration: none;
   line-height: 50px;
+  transition: 1s;
+}
+
+a:hover {
+  color: red;
 }
 
 </style>

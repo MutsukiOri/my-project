@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/ensemble_nix_header.jpg">
     <tab-menu></tab-menu>
     <router-view/>
   </div>
@@ -26,5 +26,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+img {
+  width: 80%;
+
 }
 </style>
